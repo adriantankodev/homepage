@@ -1,27 +1,34 @@
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
-.container {
-    height: 100%;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+:root {
+    --jet: #353535ff;
+    --ming: #3c6e71ff;
+    --white: #ffffffff;
+    --gainsboro: #d9d9d9ff;
+    --indigo-dye: #284b63ff;
 }
 
 /* Light mode */
 @media (prefers-color-scheme: light) {
     body {
-        background-color: #d9d9d9;
-        color: #353535;
+        background-color: var(--gainsboro);
+        color: var(--jet);
     }
 }
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #353535;
-        color: #d9d9d9;
+        background-color: var(--jet);
+        color: var(--gainsboro);
     }
 }
+
+a {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
