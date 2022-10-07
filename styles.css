@@ -17,6 +17,16 @@ body {
         background-color: var(--gainsboro);
         color: var(--jet);
     }
+
+    a, a:hover {
+        color: var(--jet);
+    }
+
+    a:hover {
+        border-radius: 8px;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 }
 
 /* Dark mode */
@@ -25,10 +35,22 @@ body {
         background-color: var(--jet);
         color: var(--gainsboro);
     }
+
+    a, a:hover {
+        color: var(--gainsboro);
+    }
+
+    a:hover {
+        border-radius: 8px;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
+    }
 }
 
 a {
+    display: block;
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 7px;
+    transition: 0.5s;
 }
 
