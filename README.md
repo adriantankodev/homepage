@@ -1,2 +1,2 @@
 # homepage
-tanko.one
+adriantanko.de
